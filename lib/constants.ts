@@ -1,4 +1,4 @@
-export const WEDDING_DATE = new Date("2027-07-12T14:30:00+09:00");
+export const WEDDING_DATE = new Date("2027-07-12T09:30:00+09:00");
 
 export const VENUE = {
   mapsUrl: "https://maps.google.com/?q=Happo-en+Shirokanedai+Tokyo",

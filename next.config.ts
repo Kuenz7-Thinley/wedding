@@ -1,27 +1,16 @@
 import type { NextConfig } from "next";
 
-/**
- * GitHub Pages project site: https://<user>.github.io/wedding/
- * Override with BASE_PATH= for root hosting (e.g. custom domain).
- */
-function getBasePath(): string {
-  if (process.env.BASE_PATH !== undefined) {
-    return process.env.BASE_PATH.replace(/\/$/, "");
-  }
+// Check if we are running inside GitHub Actions production runner
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 
-  if (process.env.NODE_ENV === "production") {
-    return "/wedding";
-  }
-
-  return "";
-}
-
-const basePath = getBasePath();
+// Use the environment variable injected by your workflow, fallback to /wedding
+const basePath = isGithubActions ? process.env.BASE_PATH || "/wedding" : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath,
+  basePath: basePath,
+  assetPrefix: basePath ? `${basePath}/` : "",
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
