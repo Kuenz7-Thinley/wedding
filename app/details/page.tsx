@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AnimateIn } from "@/components/AnimateIn";
 import { useLocale, usePageTitle } from "@/components/LocaleProvider";
 import { VENUE } from "@/lib/constants";
+import { withBasePath } from "@/lib/paths";
 
 export default function DetailsPage() {
   const { locale, t } = useLocale();
@@ -22,7 +23,7 @@ export default function DetailsPage() {
       <AnimateIn delay={1}>
         <div className="content-image">
           <Image
-            src="/images/venue.jpg"
+            src={withBasePath("/images/venue.jpg")}
             alt={t("images.venue")}
             width={640}
             height={360}

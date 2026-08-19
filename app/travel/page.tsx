@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
 import { useLocale, usePageTitle } from "@/components/LocaleProvider";
 import { HOTELS, VENUE } from "@/lib/constants";
+import { withBasePath } from "@/lib/paths";
 
 export default function TravelPage() {
   const { t } = useLocale();
@@ -21,7 +22,7 @@ export default function TravelPage() {
       <AnimateIn delay={1}>
         <div className="content-image">
           <Image
-            src="/images/tavel.jpeg"
+            src={withBasePath("/images/tavel.jpeg")}
             alt={t("images.travel")}
             width={640}
             height={360}
@@ -52,7 +53,7 @@ export default function TravelPage() {
           <AnimateIn key={hotel.url} delay={(index + 2) as 2 | 3} className="travel-card">
             <div className="travel-card__photo">
               <Image
-                src={hotel.image}
+                src={withBasePath(hotel.image)}
                 alt={t(hotel.altKey)}
                 width={400}
                 height={300}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
 import { Timeline } from "@/components/Timeline";
 import { useLocale, usePageTitle } from "@/components/LocaleProvider";
+import { withBasePath } from "@/lib/paths";
 
 export default function SchedulePage() {
   const { t } = useLocale();
@@ -21,7 +22,7 @@ export default function SchedulePage() {
       <AnimateIn delay={1}>
         <div className="content-image">
           <Image
-            src="/images/venue-cover.jpeg"
+            src={withBasePath("/images/venue-cover.jpeg")}
             alt={t("images.garden")}
             width={640}
             height={360}

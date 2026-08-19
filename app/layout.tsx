@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Providers } from "@/components/Providers";
+import { withBasePath } from "@/lib/paths";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Kuenzang & Miyu | Save the Date",
   description:
     "Save the Date — Monday, July 12, 2027. Join us for our wedding celebration at Happo-en, Tokyo.",
-  icons: { icon: "/images/monogram.svg" },
+  icons: { icon: withBasePath("/images/monogram.svg") },
 };
 
 const localeBootScript = `(function(){try{var l=localStorage.getItem("wedding-locale")||"en";document.documentElement.lang=l;if(l==="ja")document.documentElement.classList.add("locale-ja");}catch(e){}})();`;

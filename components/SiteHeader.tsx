@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
 import { NAV_ITEMS } from "@/lib/constants";
+import { withBasePath } from "@/lib/paths";
 import type { Locale } from "@/lib/i18n";
 
 export function SiteHeader() {
@@ -16,7 +17,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link href="/" className="site-logo" aria-label={t("common.homeLabel")}>
-        <Image src="/images/monogram.svg" alt="K & M monogram" width={52} height={52} priority />
+        <Image src={withBasePath("/images/monogram.svg")} alt="K & M monogram" width={52} height={52} priority />
       </Link>
       <div className="site-header__row">
         <nav className={`site-nav${open ? " open" : ""}`} aria-label="Main">

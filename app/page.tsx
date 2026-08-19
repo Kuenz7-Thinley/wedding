@@ -6,6 +6,7 @@ import { AnimateIn } from "@/components/AnimateIn";
 import { Countdown } from "@/components/Countdown";
 import { useLocale, usePageTitle } from "@/components/LocaleProvider";
 import { COLLAGE_CARDS } from "@/lib/constants";
+import { withBasePath } from "@/lib/paths";
 
 export default function HomePage() {
   const { t } = useLocale();
@@ -16,7 +17,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero__media">
           <Image
-            src="/images/hero.jpg"
+            src={withBasePath("/images/hero.jpg")}
             alt={t("images.hero")}
             fill
             priority
@@ -53,7 +54,7 @@ export default function HomePage() {
                 <Link href={card.href} className="collage-card">
                   <div className="collage-card__art">
                     <Image
-                      src={card.image}
+                      src={withBasePath(card.image)}
                       alt=""
                       width={400}
                       height={300}
@@ -71,7 +72,7 @@ export default function HomePage() {
         <div className="couple-gallery">
           <AnimateIn delay={2} className="couple-gallery__item couple-gallery__item--left">
             <Image
-              src="/images/couple-1.jpeg"
+              src={withBasePath("/images/couple-1.jpeg")}
               alt={t("images.couple")}
               width={600}
               height={800}
@@ -80,7 +81,7 @@ export default function HomePage() {
           </AnimateIn>
           <AnimateIn delay={3} className="couple-gallery__item couple-gallery__item--right">
             <Image
-              src="/images/couple-2.jpeg"
+              src={withBasePath("/images/couple-2.jpeg")}
               alt={t("images.couple")}
               width={600}
               height={800}

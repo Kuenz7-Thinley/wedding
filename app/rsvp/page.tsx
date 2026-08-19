@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
 import { RsvpForm } from "@/components/RsvpForm";
 import { useLocale, usePageTitle } from "@/components/LocaleProvider";
+import { withBasePath } from "@/lib/paths";
 
 function RsvpContent() {
   const { t } = useLocale();
@@ -22,7 +23,7 @@ function RsvpContent() {
       <AnimateIn delay={1}>
         <div className="content-image content-image--portrait">
           <Image
-            src="/images/couple-2.jpeg"
+            src={withBasePath("/images/couple-2.jpeg")}
             alt={t("images.couple")}
             width={360}
             height={480}

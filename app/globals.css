@@ -885,6 +885,27 @@ main {
   resize: vertical;
 }
 
+.form-field--error input,
+.form-field--error select,
+.form-field--error textarea {
+  border-color: #a04438;
+  background: rgb(160 68 56 / 0.04);
+}
+
+.form-field--error input:focus,
+.form-field--error select:focus,
+.form-field--error textarea:focus {
+  border-color: #a04438;
+  box-shadow: 0 0 0 3px rgb(160 68 56 / 0.15);
+}
+
+.form-field__error {
+  margin: 0.4rem 0 0;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: #a04438;
+}
+
 .form-field input:focus,
 .form-field select:focus,
 .form-field textarea:focus {
