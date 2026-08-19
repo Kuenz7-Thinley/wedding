@@ -1,13 +1,16 @@
 import type { NextConfig } from "next";
 
+/**
+ * GitHub Pages project site: https://<user>.github.io/wedding/
+ * Override with BASE_PATH= for root hosting (e.g. custom domain).
+ */
 function getBasePath(): string {
-  const fromEnv = process.env.BASE_PATH?.replace(/\/$/, "");
-  if (fromEnv) return fromEnv;
+  if (process.env.BASE_PATH !== undefined) {
+    return process.env.BASE_PATH.replace(/\/$/, "");
+  }
 
-  // GitHub Actions project site: https://<user>.github.io/<repo>/
-  const repo = process.env.GITHUB_REPOSITORY?.split("/")[1];
-  if (process.env.GITHUB_ACTIONS === "true" && repo && !repo.endsWith(".github.io")) {
-    return `/${repo}`;
+  if (process.env.NODE_ENV === "production") {
+    return "/wedding";
   }
 
   return "";

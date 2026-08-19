@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:gh-pages": "BASE_PATH=/wedding next build",
+    "build:local": "BASE_PATH= next build",
+    "build:gh-pages": "next build",
     "start": "next start",
     "lint": "next lint"
   },
