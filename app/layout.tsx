@@ -7,8 +7,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Kuenzang & Miyu | Save the Date",
-  description:
-    "Save the Date — Monday, July 12, 2027. Join us for our wedding celebration at Happo-en, Tokyo.",
+  description: "Save the Date — Monday, June 12, 2027. Join us for our wedding celebration at Happo-en, Tokyo.",
   icons: { icon: withBasePath("/images/monogram.svg") },
 };
 

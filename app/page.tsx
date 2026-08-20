@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AnimateIn } from "@/components/AnimateIn";
 import { Countdown } from "@/components/Countdown";
+import { CoupleGallery } from "@/components/CoupleGallery";
 import { useLocale, usePageTitle } from "@/components/LocaleProvider";
 import { COLLAGE_CARDS } from "@/lib/constants";
 import { withBasePath } from "@/lib/paths";
@@ -17,7 +18,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero__media">
           <Image
-            src={withBasePath("/images/hero.jpg")}
+            src={withBasePath("/images/hero.jpeg")}
             alt={t("images.hero")}
             fill
             priority
@@ -69,26 +70,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="couple-gallery">
-          <AnimateIn delay={2} className="couple-gallery__item couple-gallery__item--left">
-            <Image
-              src={withBasePath("/images/couple-1.jpeg")}
-              alt={t("images.couple")}
-              width={600}
-              height={800}
-              sizes="(max-width: 640px) 100vw, 480px"
-            />
-          </AnimateIn>
-          <AnimateIn delay={3} className="couple-gallery__item couple-gallery__item--right">
-            <Image
-              src={withBasePath("/images/couple-2.jpeg")}
-              alt={t("images.couple")}
-              width={600}
-              height={800}
-              sizes="(max-width: 640px) 100vw, 480px"
-            />
-          </AnimateIn>
-        </div>
+        <CoupleGallery />
 
         <Countdown />
       </section>

@@ -23,7 +23,7 @@ function RsvpContent() {
       <AnimateIn delay={1}>
         <div className="content-image content-image--portrait">
           <Image
-            src={withBasePath("/images/couple-2.jpeg")}
+            src={withBasePath("/images/welcome.jpeg")}
             alt={t("images.couple")}
             width={360}
             height={480}

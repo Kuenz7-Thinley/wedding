@@ -22,7 +22,7 @@ export default function SchedulePage() {
       <AnimateIn delay={1}>
         <div className="content-image">
           <Image
-            src={withBasePath("/images/venue-cover.jpeg")}
+            src={withBasePath("/images/schedule.jpeg")}
             alt={t("images.garden")}
             width={640}
             height={360}

@@ -8,7 +8,7 @@ const translations = {
   en: {
     "meta.home.title": "Kuenzang & Miyu | Save the Date",
     "meta.home.description":
-      "Save the Date — Monday, July 12, 2027. Join us for our wedding celebration at Happo-en, Tokyo.",
+      "Save the Date — Saturday, June 12, 2027. Join us for our wedding celebration at Happo-en, Tokyo.",
     "meta.details.title": "Details | Kuenzang & Miyu",
     "meta.details.description": "Wedding details — location, date, attire, and more.",
     "meta.travel.title": "Travel & Stay | Kuenzang & Miyu",
@@ -25,6 +25,7 @@ const translations = {
     "nav.schedule": "Schedule",
 
     "common.menu": "Menu",
+    "common.close": "Close menu",
     "common.homeLabel": "Home",
     "common.langLabel": "Language",
 
@@ -38,7 +39,7 @@ const translations = {
     "images.hotel1": "Shinagawa Prince Hotel",
     "images.hotel2": "The Prince Park Tower Tokyo",
 
-    "home.date": "Monday, July 12, 2027",
+    "home.date": "Monday, June 12, 2027",
     "home.venue": "Happo-en · Tokyo, Japan",
     "home.eyebrow": "Save the Date",
     "home.rsvpCta": "RSVP Now",
@@ -51,6 +52,10 @@ const translations = {
     "home.countdown.title": "Counting Down",
     "home.countdown.subtitle": 'Until we say "I do"',
     "home.countdown.aria": "Countdown to wedding",
+    "home.gallery.aria": "Photo gallery of Kuenzang and Miyu",
+    "home.gallery.prev": "Previous photo",
+    "home.gallery.next": "Next photo",
+    "home.gallery.goTo": "Go to photo",
 
     "countdown.days": "Days",
     "countdown.hours": "Hours",
@@ -65,7 +70,7 @@ const translations = {
     "details.location.maps": "View on Google Maps",
     "details.location.website": "Visit venue website",
     "details.dateTime.title": "Date & Time",
-    "details.dateTime.lead": "Monday, July 12, 2027.",
+    "details.dateTime.lead": "Monday, June 12, 2027.",
     "details.dateTime.arrival": "Please arrive at 9:00 AM. The ceremony will begin promptly at 9:30 AM.",
     "details.dateTime.travelLink": "Travel & Stay",
     "details.dateTime.scheduleLink": "here",
@@ -87,7 +92,7 @@ const translations = {
     "travel.gettingThere.directions": "Get Directions",
     "travel.stay.title": "Where to Stay",
     "travel.stay.body":
-      "Tokyo offers excellent transit options. We recommend booking accommodations early — July is a popular travel season.",
+      "Tokyo offers excellent transit options. We recommend booking accommodations early — June is a popular travel season.",
     "travel.hotel1.name": "Shinagawa Prince Hotel",
     "travel.hotel1.desc": "A convenient option with easy access to Happo-en via taxi or train.",
     "travel.hotel2.name": "The Prince Park Tower Tokyo",
@@ -140,11 +145,11 @@ const translations = {
     "rsvp.validation.messageMax": "Message must be 1,000 characters or fewer.",
     "rsvp.thankYou": "Thank You!",
     "rsvp.confirmation":
-      "Your response has been received. We can't wait to celebrate with you on Monday, July 12, 2027.",
+      "Your response has been received. We can't wait to celebrate with you on Monday, June 12, 2027.",
   },
   ja: {
     "meta.home.title": "クンザン & みゆ | セーブ・ザ・デート",
-    "meta.home.description": "2027年7月12日（月）— 東京・八芳園での結婚式にお越しください。",
+    "meta.home.description": "2027年6月12日（土）— 東京・八芳園での結婚式にお越しください。",
     "meta.details.title": "詳細 | クンザン & みゆ",
     "meta.details.description": "結婚式の詳細 — 会場、日時、ドレスコードなど。",
     "meta.travel.title": "アクセス・宿泊 | クンザン & みゆ",
@@ -161,6 +166,7 @@ const translations = {
     "nav.schedule": "スケジュール",
 
     "common.menu": "メニュー",
+    "common.close": "メニューを閉じる",
     "common.homeLabel": "ホーム",
     "common.langLabel": "言語",
 
@@ -174,7 +180,7 @@ const translations = {
     "images.hotel1": "品川プリンスホテル",
     "images.hotel2": "ザ・プリンス パークタワー東京",
 
-    "home.date": "2027年7月12日（月）",
+    "home.date": "2027年6月12日（土）",
     "home.venue": "八芳園 · 東京、日本",
     "home.eyebrow": "Save the Date",
     "home.rsvpCta": "出欠を返信する",
@@ -187,6 +193,10 @@ const translations = {
     "home.countdown.title": "カウントダウン",
     "home.countdown.subtitle": "「はい」の瞬間まで",
     "home.countdown.aria": "結婚式までのカウントダウン",
+    "home.gallery.aria": "クンザンとみゆのフォトギャラリー",
+    "home.gallery.prev": "前の写真",
+    "home.gallery.next": "次の写真",
+    "home.gallery.goTo": "写真へ移動",
 
     "countdown.days": "日",
     "countdown.hours": "時間",
@@ -201,7 +211,7 @@ const translations = {
     "details.location.maps": "Google マップで見る",
     "details.location.website": "会場公式サイト",
     "details.dateTime.title": "日時",
-    "details.dateTime.lead": "2027年7月12日（月）",
+    "details.dateTime.lead": "2027年6月12日（土）",
     "details.dateTime.arrival": "開始 9:00 までにお越しください。挙式は 9:30 より開始いたします。",
     "details.dateTime.travelLink": "アクセス・宿泊",
     "details.dateTime.scheduleLink": "スケジュール",
@@ -274,7 +284,7 @@ const translations = {
     "rsvp.validation.dietaryMax": "アレルギー・食事制限は500文字以内で入力してください。",
     "rsvp.validation.messageMax": "メッセージは1,000文字以内で入力してください。",
     "rsvp.thankYou": "ありがとうございます",
-    "rsvp.confirmation": "ご返信を確認いたしました。2027年7月12日（月）お会いできることを楽しみにしています。",
+    "rsvp.confirmation": "ご返信を確認いたしました。2027年6月12日（土）お会いできることを楽しみにしています。",
   },
 } as const;
 

@@ -1,4 +1,4 @@
-export const WEDDING_DATE = new Date("2027-07-12T09:30:00+09:00");
+export const WEDDING_DATE = new Date("2027-06-12T09:30:00+09:00");
 
 export const VENUE = {
   mapsUrl: "https://maps.google.com/?q=Happo-en+Shirokanedai+Tokyo",
@@ -32,9 +32,17 @@ export const NAV_ITEMS = [
   { href: "/schedule", labelKey: "nav.schedule" as const },
 ];
 
+export const COUPLE_GALLERY_IMAGES = [
+  "/images/couple-1.jpeg",
+  "/images/couple-2.jpeg",
+  "/images/couple-3.jpg",
+  "/images/couple-4.jpg",
+  "/images/couple-5.jpg",
+] as const;
+
 export const COLLAGE_CARDS = [
-  { href: "/schedule", image: "/images/venue-cover.jpeg", labelKey: "home.card.schedule" as const },
-  { href: "/rsvp", image: "/images/couple-1.jpeg", labelKey: "home.card.rsvp" as const },
-  { href: "/details", image: "/images/venue.jpg", labelKey: "home.card.details" as const },
+  { href: "/schedule", image: "/images/schedule.jpeg", labelKey: "home.card.schedule" as const },
+  { href: "/rsvp", image: "/images/rsvp.jpeg", labelKey: "home.card.rsvp" as const },
+  { href: "/details", image: "/images/venue-cover.jpeg", labelKey: "home.card.details" as const },
   { href: "/travel", image: "/images/tavel.jpeg", labelKey: "home.card.travel" as const },
 ];
