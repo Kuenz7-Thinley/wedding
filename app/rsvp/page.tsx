@@ -21,13 +21,13 @@ function RsvpContent() {
       </AnimateIn>
 
       <AnimateIn delay={1}>
-        <div className="content-image content-image--portrait">
+        <div className="content-image">
           <Image
-            src={withBasePath("/images/welcome.jpeg")}
+            src={withBasePath("/images/pages/rsvp.png")}
             alt={t("images.couple")}
-            width={360}
-            height={480}
-            sizes="(max-width: 480px) 90vw, 360px"
+            fill
+            sizes="(max-width: 640px) 100vw, 640px"
+            className="content-image__img"
           />
         </div>
       </AnimateIn>

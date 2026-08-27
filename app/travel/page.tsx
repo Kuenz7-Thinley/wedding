@@ -22,11 +22,11 @@ export default function TravelPage() {
       <AnimateIn delay={1}>
         <div className="content-image">
           <Image
-            src={withBasePath("/images/tavel.jpeg")}
+            src={withBasePath("/images/pages/travel_and_stay.png")}
             alt={t("images.travel")}
-            width={640}
-            height={360}
+            fill
             sizes="(max-width: 640px) 100vw, 640px"
+            className="content-image__img"
           />
         </div>
       </AnimateIn>
