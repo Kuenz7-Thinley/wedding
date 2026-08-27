@@ -18,7 +18,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero__media">
           <Image
-            src={withBasePath("/images/hero.jpeg")}
+            src={withBasePath("/images/couple/hero.png")}
             alt={t("images.hero")}
             fill
             priority

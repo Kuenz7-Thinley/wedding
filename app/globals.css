@@ -804,22 +804,22 @@ main {
 }
 
 .content-image {
-  max-width: 680px;
+  position: relative;
+  max-width: 640px;
   margin: 0 auto 2.5rem;
+  aspect-ratio: 3 / 2;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
   border: 1px solid rgb(16 185 129 / 0.2);
+  background: var(--champagne-deep);
 }
 
-.content-image img {
+.content-image img,
+.content-image__img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-}
-
-.content-image--portrait {
-  max-width: min(380px, 100%);
 }
 
 .content-block--spaced {

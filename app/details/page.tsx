@@ -23,11 +23,11 @@ export default function DetailsPage() {
       <AnimateIn delay={1}>
         <div className="content-image">
           <Image
-            src={withBasePath("/images/venue.jpg")}
+            src={withBasePath("/images/pages/event_details.png")}
             alt={t("images.venue")}
-            width={640}
-            height={360}
+            fill
             sizes="(max-width: 640px) 100vw, 640px"
+            className="content-image__img"
           />
         </div>
       </AnimateIn>
@@ -35,10 +35,7 @@ export default function DetailsPage() {
       <AnimateIn delay={2}>
         <article className="content-block">
           <h2 className="content-block__title">{t("details.location.title")}</h2>
-          <p
-            className="content-block__body"
-            dangerouslySetInnerHTML={{ __html: t("details.location.body") }}
-          />
+          <p className="content-block__body" dangerouslySetInnerHTML={{ __html: t("details.location.body") }} />
           <a className="content-block__link" href={VENUE.mapsUrl} target="_blank" rel="noopener noreferrer">
             {t("details.location.maps")}
           </a>
